@@ -7,7 +7,7 @@ Order placement data for Barker Bob's Burger Bar's Bigger, Better Burger Bonanza
 <!-- TODO define your own vocabulary/syntax. Example follows:  -->
 
 
-<!ELEMENT order (customer, order_type?, burgers+, special?)>
+<!ELEMENT order (customer, order_type?, burger+, special?)>
 
 <!-- A customer is identified simply by their name -->
 <!ELEMENT customer (#PCDATA)>
