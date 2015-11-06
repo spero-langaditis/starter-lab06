@@ -40,3 +40,17 @@ Burger customization...
     type    (beef|pork|turkey|bison|vege) "beef"
 >
 
+<!-- The customer can order two cheeses. Let's assume that one might go on top
+and one on bottom, and provide for unique codes for these. -->
+<!ELEMENT cheeses EMPTY>
+<!ATTLIST cheeses
+    top (american|swiss|jack|blue|gruyere|gouda|aged|goat|brie) #IMPLIED
+    bottom (american|swiss|jack|blue|gruyere|gouda|aged|goat|brie) #IMPLIED
+>
+
+<!-- Toppings... there could be tons, so we'll handle them individually -->
+<!ELEMENT topping (#PCDATA)>
+<!ATTLIST topping
+    type    (lettuce|tomato|raw|dill|roasted|shrooms|salsa|bacon|chilies|fkchili|avocado|egg|porkbelly) #REQUIRED
+>
+
